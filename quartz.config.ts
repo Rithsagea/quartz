@@ -72,7 +72,13 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({
+        renderEngine: "katex",
+        customMacros: {
+          "\\cases": "\\begin{cases}#1\\end{cases}",
+          "\\matrix": "\\begin{matrix}#1\\end{matrix}"
+        }
+      }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
