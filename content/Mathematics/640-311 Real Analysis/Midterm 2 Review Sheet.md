@@ -1,5 +1,6 @@
 ---
 title: Midterm 2 Review Sheet
+date: 2024-11-06
 ---
 
 # Sequences

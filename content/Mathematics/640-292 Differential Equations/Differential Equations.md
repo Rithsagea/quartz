@@ -1,5 +1,6 @@
 ---
 title: Differential Equations
+date: 2025-02-23
 ---
 
 ## First Order Linear Differential Equations

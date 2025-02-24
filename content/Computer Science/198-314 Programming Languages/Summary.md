@@ -1,3 +1,7 @@
+---
+date: 2024-12-10
+---
+
 # DFAs and NFAs
 <u>NFA -> DFA Reduction</u> Construct $\epsilon$-Closures of subsets of nodes, and use subsets as new node
 

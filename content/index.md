@@ -1,5 +1,6 @@
 ---
 title: Miku's Notes
+date: 2025-02-23
 ---
 These are my notes!
 
@@ -14,6 +15,8 @@ These are my notes!
 [[Mathematics/640-451 Abstract Algebra I/Summary|640-451 Abstract Algebra I]] (Lev Borisov, Fall 2024)
 
 [[Probability|640-477 Probability]] (Ian Jauslin, Spring 2024)
+
+[[Mathematics/DRP Spring 2024/index|DRP Spring 2024]]
 
 ## Computer Science
 [[Computer Science/198-314 Programming Languages/Summary|198-314 Programming Languages]] (Zheng Zhang, Fall 2024)

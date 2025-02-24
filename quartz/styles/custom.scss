@@ -1,3 +1,24 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+.callout[data-callout="definition"] {
+  --callout-color: var(--color-blue-rgb);
+  --callout-icon: book;
+}
+
+.callout[data-callout="lemma"],
+.callout[data-callout="theorem"] {
+  --callout-color: var(--color-green-rgb);
+  --callout-icon: asterisk;
+}
+
+.callout[data-callout="corollary"],
+.callout[data-callout="proposition"] {
+  --callout-color: var(--color-cyan-rgb);
+  --callout-icon: ellipsis;
+}
+
+img[alt*="center"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

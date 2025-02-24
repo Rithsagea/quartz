@@ -1,3 +1,8 @@
+---
+title: Regular Languages
+date: 2025-02-19
+---
+
 ## Deterministic Finite Automata
 
 A <u>deterministic finite automaton</u> is a 5-tuple $M=(Q,\Sigma,\delta,q_0,F)$ 

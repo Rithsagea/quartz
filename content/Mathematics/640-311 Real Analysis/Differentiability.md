@@ -1,5 +1,6 @@
 ---
 title: Differentiability
+date: 2024-11-15
 ---
 
 <u>Differentiability</u> Let $f:A\rightarrow\mathbb R$. For $c\in A$, the derivative of $f$ at $c$ is $g^\prime(c)=\lim_{x\rightarrow c}\frac{g(x)-g(c)}{x-c}$. If this exists, then $f$ is differentiable at $c$. If $g^\prime$ exists for all $c\in A$, then $f$ is differentiable on $A$.

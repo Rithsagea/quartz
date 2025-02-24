@@ -1,5 +1,6 @@
 ---
 title: 640-311 Real Analysis
+date: 2025-02-23
 ---
 
 My notes for this class are pretty scattered, since I learned the content over the summer and just reviewed it in lecture.

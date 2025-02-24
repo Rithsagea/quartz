@@ -1,3 +1,7 @@
+---
+date: 2024-11-09
+---
+
 A graph is a set of <u>vertices</u> and <u>edges</u>. A graph is <u>connected</u> if there are paths between each node.
 
 <u>DFS</u> Traverse a graph starting from given node. When visiting a node, set the previsit to the counter. When leaving a node (all children have been exhausted) set postvisit to the counter.

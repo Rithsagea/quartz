@@ -1,5 +1,6 @@
 ---
 title: 198-344 Algorithms
+date: 2025-02-23
 ---
 
 

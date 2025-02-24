@@ -1,4 +1,7 @@
-# Note Sheet
+---
+date: 2024-12-09
+---
+
 ## Basic Math
 ### Order Notation
 Let $f,g:\mathbb Z_{>0}\rightarrow\mathbb R_{>0}$. We define the following relations
