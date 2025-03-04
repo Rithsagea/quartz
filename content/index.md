@@ -14,9 +14,11 @@ These are my notes!
 
 [[Mathematics/640-451 Abstract Algebra I/Summary|640-451 Abstract Algebra I]] (Lev Borisov, Fall 2024)
 
+[[Mathematics/640-452 Abstract Algebra II/index|640-452 Abstract Algebra II]] (Dima Sinapova, Spring 2025)
+
 [[Probability|640-477 Probability]] (Ian Jauslin, Spring 2024)
 
-[[Mathematics/DRP Spring 2024/index|DRP Spring 2024]]
+[[Mathematics/DRP Spring 2025/index|DRP Spring 2025]]
 
 ## Computer Science
 [[Computer Science/198-314 Programming Languages/Summary|198-314 Programming Languages]] (Zheng Zhang, Fall 2024)
