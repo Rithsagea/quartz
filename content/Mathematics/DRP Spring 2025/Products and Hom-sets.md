@@ -39,8 +39,12 @@ date: 2025-02-27
 
 >[!example] Show duality of product and coproduct in homset
 >Let $\mathscr C$ be a category. Denote $C$ as the coproduct of $\mathscr C$ and $P$ the product of $\mathscr C$. Show that the following hom-functors are isomorphic
->$$\hom(\coprod_{j\in J}A_j,-)\cong\prod_{j\in J}\hom(A_j,-)$$
->$$\hom(-,\prod_{i\in I}B_i)\cong\prod_{i\in I}\hom(-,B_i)$$
+>$$
+>\hom(\coprod_{j\in J}A_j,-)\cong\prod_{j\in J}\hom(A_j,-)
+>$$
+>$$
+>\hom(-,\prod_{i\in I}B_i)\cong\prod_{i\in I}\hom(-,B_i)
+>$$
 
 We will prove the equivalence by showing there is a natural isomorphism. For convenience, denote $C:=\coprod_{j\in J}A_j$ and $P:=\prod_{i\in I}B_i$.
 
