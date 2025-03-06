@@ -1,5 +1,4 @@
 ---
-title: DRP Notes, Week 3
 date: 2025-02-23
 ---
 

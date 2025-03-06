@@ -79,6 +79,7 @@ const config: QuartzConfig = {
           "\\matrix": "\\begin{matrix}#1\\end{matrix}"
         }
       }),
+      Plugin.TikzTransformer()
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
