@@ -52,12 +52,13 @@ We will prove the equivalence by showing there is a natural isomorphism. For con
 
 ```tikz
 \usepackage{tikz-cd}
+\usepackage{amsmath}
 \begin{document}
 \begin{tikzcd}
-\hom(C,X) \rar["\eta_X"] \dar["\hom(C{,}k)"] &
-\prod_{j\in J}\hom(A_j,X) \dar["\hom(A_j{,}k)_{j\in J}"] \\
-\hom(C,Y) \rar["\eta_Y"] &
-\prod_{j\in J}\hom(A_j,Y)
+\hom(C\text,X) \rar["\eta_X"] \dar["\hom(C\text{,}k)"] &
+\prod_{j\in J}\hom(A_j\text,X) \dar["\hom(A_j\text{,}k)_{j\in J}"] \\
+\hom(C\text,Y) \rar["\eta_Y"] &
+\prod_{j\in J}\hom(A_j\text,Y)
 \end{tikzcd}
 \end{document}
 ```

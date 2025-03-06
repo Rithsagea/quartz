@@ -1,5 +1,6 @@
 import { visit } from "unist-util-visit"
 import { QuartzTransformerPlugin } from "../types"
+import { Html, Root } from "mdast";
 
 // Change in Markdown syntax tree from codeblock to script tag
 export const TikzTransformer: QuartzTransformerPlugin = () => {
@@ -7,7 +8,7 @@ export const TikzTransformer: QuartzTransformerPlugin = () => {
     name: 'TikzTransformer',
     markdownPlugins() {
       return [() => {
-        return (tree, file) => {
+        return (tree: Root, file) => {
           visit(tree, 'code', (node) => {
             if (node.lang === 'tikz') {
               // Clean up Latex code
@@ -23,7 +24,7 @@ export const TikzTransformer: QuartzTransformerPlugin = () => {
               lines = lines.filter(line => line);
 
               node.value = lines.join("\n");
-              node.type = 'html';
+              (node as unknown as Html).type = 'html';
               node.value = `<script type="text/tikz"'>${node.value}</script>`;
             }
           });
@@ -37,18 +38,20 @@ export const TikzTransformer: QuartzTransformerPlugin = () => {
             // Change node to include raw HTML before parsing to JSX
             visit(tree, "element", (node, index, parent) => {
               if (node.tagName === "script" && node.properties?.type === "text/tikz") {
+                const content: string = node.children[0].value
+                  .replaceAll("\\usepackage{amsmath}", "")
                 const divNode = {
                   type: 'element',
                   tagName: 'div',
                   properties: {
                     class: "tikz-diagram",
                     dangerouslySetInnerHTML: {
-                      __html: '<script type="text/tikz">'.concat(node.children[0].value, '</script>')
+                      __html: '<script type="text/tikz">'.concat(content, '</script>')
                     }
                   },
                   children: []
                 };
-                parent.children[index] = divNode
+                parent.children[index!] = divNode
               }
             })
 
