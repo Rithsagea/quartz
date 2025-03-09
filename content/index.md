@@ -18,6 +18,8 @@ These are my notes!
 
 [[Probability|640-477 Probability]] (Ian Jauslin, Spring 2024)
 
+[[Mathematics/640-495 Special Topics/index|640-495 Special Topics (ML)]] (Moulik Balasubramanian, Spring 2025)
+
 [[Mathematics/DRP Spring 2025/index|DRP Spring 2025]]
 
 ## Computer Science
