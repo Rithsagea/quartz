@@ -20,14 +20,18 @@ $FOLLOW(\langle\alpha\rangle)$: terminals that appear immediately after $\langle
 
 $PREDICT(\langle A\rangle::=\delta)$: lookahead symbols that are valid for rule $\langle A\rangle::=\delta$
 
-$$FIRST(y_1y_2\cdots)=
+$$
+FIRST(y_1y_2\cdots)=
 \begin{cases}
 FIRST(y_1)&\epsilon\not\in FIRST(y_1)\\\{FIRST(y_1)-\epsilon\}\cup FIRST(y_2\cdots)&\epsilon\in FIRST(y_1)
 \end{cases}
 $$
 
-$$\text{Production Rule: }a\rightarrow b_1b_2\cdots b_i\cdots$$
-$$FOLLOW(b_i)=
+$$
+\text{Production Rule: }a\rightarrow b_1b_2\cdots b_i\cdots
+$$
+$$
+FOLLOW(b_i)=
 \begin{cases}
 FIRST(b_{i+1}b_{i+2}\cdots)&
 \epsilon\not\in FIRST(b_{i+1}b_{i+2}\cdots)\\
@@ -35,8 +39,8 @@ FIRST(b_{i+1}b_{i+2}\cdots)&
 \epsilon\in FIRST(b_{i+1}b_{i+2}\cdots)
 \end{cases}
 $$
-
-$$PREDICT(\langle \alpha\rangle::=\delta)=
+$$
+PREDICT(\langle \alpha\rangle::=\delta)=
 \begin{cases}FIRST(\delta)-\{\epsilon\}\cup FOLLOW(\langle A\rangle)&\epsilon\in FIRST(\delta)\\FIRST(\delta)&otherwise\end{cases}
 $$
 
