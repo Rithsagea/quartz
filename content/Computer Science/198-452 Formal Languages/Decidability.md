@@ -70,3 +70,12 @@ $EQ_{TM}=\{\langle M_1,M_2\rangle|M_1\text{ and }M_2\text{ are TMs and }L(M_1)=L
 A <u>linear bounded automaton</u> is a Turing machine where the tape head cannot move off the portion containing the input. This means the set of possible configurations is finite.
 
 An $LBA$ with $q$ states, $g$ symbols, has $qng^n$ configurations given a tape of length $n$. Thus $A_{LBA}$ is decidable, since we can simulate this many steps and before accepting or determining looping.
+
+---
+<u>Rice's Theorem</u> $P\subset TM$ is a nontrivial property if $P\ne\varnothing,TM$ and for all $M_1,M_2\in TM$, if $M_1\in P$ and $L(M_1)=L(M_2)$, then $M_2\in P$. Then $P$ is an undecidable language. This can be reduced to the halting problem.
+
+WLOG assume machines that return an empty language are not included in $P$. If they are, take $\overline P$ instead. Let $M^\dagger\in P$. Define a TM $H$ that and given $\langle M,w\rangle$, constructs a TM $A$ that does the following.
+- run $w$ on $M$
+- run $w'$ on $M^\dagger$ and return this result
+
+Let $H$ construct $A$ and return if $A\in P$. If $M$ halts, then this machine is equivalent to $M^\dagger$ and $H$ accepts. If $M$ does not halt, then $L(A)=\varnothing$ and $H$ rejects. $H$ decides the halting problem, giving a contradiction.
