@@ -76,7 +76,8 @@ const config: QuartzConfig = {
         customMacros: {
           "\\cases": "\\begin{cases}#1\\end{cases}",
           "\\matrix": "\\begin{matrix}#1\\end{matrix}",
-          "\\pmatrix": "\\begin{pmatrix}#1\\end{pmatrix}"
+          "\\pmatrix": "\\begin{pmatrix}#1\\end{pmatrix}",
+          "\\diam": "\\operatorname{diam}"
         },
       }),
       Plugin.TikzTransformer()
