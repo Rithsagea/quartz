@@ -26,7 +26,7 @@ $$
 >[!info]
 >Suppose $a_n$ is monotone decreasing. Then $\sum a_n$ converges if and only if the following series converges.
 >$$
->\sum^\infty_{k=09}2^k_{a_{2^k}}=a_1+2a_2+4a_4+8a_8+\ldots
+>\sum^\infty_{k=0}2^ka_{2^k}=a_1+2a_2+4a_4+8a_8+\ldots
 >$$
 
 Define the following sequences, $s_n=a_1+a_2+\ldots+a_n$, $t_k=a_1+2a_2+\ldots+2^k_{a_{2^k}}$. We have the following cases
