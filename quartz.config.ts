@@ -72,12 +72,13 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({
-        renderEngine: "katex",
+        renderEngine: "mathjax",
         customMacros: {
-          "\\cases": "\\begin{cases}#1\\end{cases}",
-          "\\matrix": "\\begin{matrix}#1\\end{matrix}",
-          "\\pmatrix": "\\begin{pmatrix}#1\\end{pmatrix}",
-          "\\diam": "\\operatorname{diam}"
+          cases: ["\\begin{cases}#1\\end{cases}",1],
+          matrix: ["\\begin{matrix}#1\\end{matrix}",1],
+          pmatrix: ["\\begin{pmatrix}#1\\end{pmatrix}",1],
+          bmatrix: ["\\begin{bmatrix}#1\\end{bmatrix}",1],
+          diam: "\\operatorname{diam}"
         },
       }),
       Plugin.TikzTransformer()
