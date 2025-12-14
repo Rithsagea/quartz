@@ -7,5 +7,5 @@ My notes for this class are pretty scattered, since I learned the content over t
 
 - [[Midterm 2 Review Sheet]]
 - [[Topology]] random throwaway lecture before winter break
-- Notes on [[Differentiability]]
+- Notes on [[Legacy/Mathematics/640-311 Real Analysis/Differentiability]]
 - [[Analysis Definitions]] Final Review Sheet

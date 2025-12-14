@@ -1,6 +1,6 @@
 Source: [[9780070542358|Principles of Mathematical Analysis]]
 
-Let $X$ and $Y$ be metric spaces, $E\subset X$, $p\in E$, and $f:E\to Y$. We say $f$ is <u>continuous</u> at $p$ if for every $\varepsilon>0$, there exists a $\delta>0$ such that $d_Y(f(x),f(p))<\varepsilon$ for all $x\in E$ which $d_X(x,p)<\delta$. If $f$ is continuous at every point of $E$, then $f$ is continuous on $E$.
+Let $X$ and $Y$ be metric spaces, $E\subset X$, $p\in E$, and $f:E\to Y$. We say $f$ is <u>continuous</u> at $p$ if for every $\varepsilon>0$, there exists a $\delta>0$ such that $d_Y(f(x),f(p))<\varepsilon$ for all $x\in E$ which $0<d_X(x,p)<\delta$. If $f$ is continuous at every point of $E$, then $f$ is continuous on $E$.
 
 ## Transitivity
 >[!info]

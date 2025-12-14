@@ -59,3 +59,11 @@ Note $\sum\frac1n$ diverges, while $\sum\frac1{n^2}$ converges. Both of these ha
 
 ## Ratio Test
 >[!info]
+>The series $\sum a_n$
+>1. Converges if $\lim\sup_{n\to\infty}\left|\frac{a_{n+1}}{a_n}<1\right|$
+>2. Diverges if $\left|\frac{a_{n+1}}{a_n}\right|\ge1$ for all $n\ge n_0$, where $n_0$ is some fixed integer.
+
+(1) There is $\beta<1$ such that $|\frac{a_{n+1}}{a_n}|<\beta$ for $n\ge N$. Then $|a_{N+p}|<\beta^p|a_N|$, so $|a_n|<|a_N|\beta^{-N}\beta^n$. By [[#Comparison Test]] this converges.
+
+(2) Similar bounding can be performed to show the sequence diverges.
+
