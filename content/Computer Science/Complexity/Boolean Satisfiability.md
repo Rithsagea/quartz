@@ -8,7 +8,7 @@ $$
 
 # NP-Complete
 >[!info]
->$SAT$ is $NP$-complete.
+>$SAT$ is NP-complete.
 
 Clearly $SAT\subseteq NP$, as a nondeterministic Turing machine can guess an assignment to check for satisfiability. Now let $A\in NP$ with polytime verifier [[Turing Machine]] $N$ that terminates in $O(n^k)$. A <u>tableau</u> for $N$ with input $w=w_1w_2\ldots w_n$ is an $n^k\times n^k$ table, where rows represent configurations. Furthermore, assume each configuration is wrapped with $\#$.
 
@@ -86,4 +86,4 @@ x_{i+di-1,j+dj-2,W[di,dj]}
 $$
 
 ## Analysis
-The final boolean formula is given by $\phi=\phi_{cell}\land\phi_{start}\land\phi_{move}\land\phi_{accept}$. There are $O(n^{2k}|C|)$ variables and $O(|C|^6n^{2k})$ components in $\phi$, thus this gives polynomial reduction of any $NP$ problem to some boolean satisfiability instance.
+The final boolean formula is given by $\phi=\phi_{cell}\land\phi_{start}\land\phi_{move}\land\phi_{accept}$. There are $O(n^{2k}|C|)$ variables and $O(|C|^6n^{2k})$ components in $\phi$, thus this gives polynomial reduction of any NP problem to some boolean satisfiability instance.

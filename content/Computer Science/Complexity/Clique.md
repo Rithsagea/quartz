@@ -7,7 +7,7 @@ $$
 
 ## NP-Complete
 >[!info]
->$CLIQUE$ is $NP$-complete
+>$CLIQUE$ is NP-complete
 
 It is known that [[3SAT]] is $NP$-complete. A moment's thought shows that $CLIQUE\in NP$, as we can check in polynomial time whether a subgraph is complete.
 

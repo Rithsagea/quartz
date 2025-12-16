@@ -7,9 +7,9 @@ $$
 
 ## NP-Complete
 >[!info]
->$3SAT$ is $NP$-complete
+>$3SAT$ is NP-complete
 
-It is known that [[Boolean Satisfiability#NP-Complete|SAT]] is $NP$-complete. Furthermore $3SAT\subseteq SAT$, thus $3SAT\in NP$. Given some boolean formula $\phi$, this can be rewritten as a conjunction of disjunctions, by distributing $x\land(y\lor z)=(x\land y)\lor(x\land z)$ and applying DeMorgan's Law. Finally, a string of disjunctions can be decomposed into 3-length disjunctions by adding helper variables $z_1,z_2,\ldots$
+It is known that [[Boolean Satisfiability#NP-Complete|SAT]] is NP-complete. Furthermore $3SAT\subseteq SAT$, thus $3SAT\in NP$. Given some boolean formula $\phi$, this can be rewritten as a conjunction of disjunctions, by distributing $x\land(y\lor z)=(x\land y)\lor(x\land z)$ and applying DeMorgan's Law. Finally, a string of disjunctions can be decomposed into 3-length disjunctions by adding helper variables $z_1,z_2,\ldots$
 $$
 (a_1\lor a_2\lor\ldots\lor a_l)
 =
